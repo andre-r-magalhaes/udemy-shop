@@ -9,6 +9,8 @@ import 'models/order_list.dart';
 import 'models/product_list.dart';
 import 'utils/app_routes.dart';
 import 'views/cart_view.dart';
+import 'views/product_form_view.dart';
+import 'views/products_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,6 +46,8 @@ class MyApp extends StatelessWidget {
           AppRoutes.productDetail: (ctx) => ProductDetailView(),
           AppRoutes.cart: (ctx) => CartView(),
           AppRoutes.orders: (ctx) => OrdersView(),
+          AppRoutes.products: (ctx) => ProductsView(),
+          AppRoutes.product_form: (ctx) => ProductFormView(),
         },
       ),
     );
